@@ -11,9 +11,8 @@ const firebaseConfig = {
 };
 
 // Inicializar Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const db = firebase.database();
-
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 const contentDiv = document.getElementById('content');
 const inputField = document.getElementById('input');
 
